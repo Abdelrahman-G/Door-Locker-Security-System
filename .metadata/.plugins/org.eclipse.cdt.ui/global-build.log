@@ -1,0 +1,246 @@
+12:37:06 **** Incremental Build of configuration Debug for project Door_Locker_security_system ****
+make all 
+Building target: Door_Locker_security_system.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Door_Locker_security_system.map -mmcu=atmega32 -o "Door_Locker_security_system.elf"  ./HMI_ECU/GPIO.o ./HMI_ECU/HMI_ECU.o ./HMI_ECU/keypad.o ./HMI_ECU/lcd.o ./HMI_ECU/timer1.o ./HMI_ECU/uart.o  ./Control_ECU/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./Control_ECU/CONTROL_ECU.o ./Control_ECU/GPIO.o ./Control_ECU/PWM.o ./Control_ECU/buzzer.o ./Control_ECU/dc-motor.o ./Control_ECU/external_eeprom.o ./Control_ECU/i2c.o ./Control_ECU/timer1.o ./Control_ECU/uart.o   
+./Control_ECU/CONTROL_ECU.o: In function `storePassword':
+../Control_ECU/CONTROL_ECU.c:58: multiple definition of `g_countSeconds'
+./HMI_ECU/HMI_ECU.o:../HMI_ECU/HMI_ECU.c:50: first defined here
+./Control_ECU/CONTROL_ECU.o: In function `storePassword':
+../Control_ECU/CONTROL_ECU.c:58: multiple definition of `timer1_config_ptr'
+./HMI_ECU/HMI_ECU.o:../HMI_ECU/HMI_ECU.c:50: first defined here
+./Control_ECU/CONTROL_ECU.o: In function `storePassword':
+../Control_ECU/CONTROL_ECU.c:58: multiple definition of `verifyPassword'
+./HMI_ECU/HMI_ECU.o:../HMI_ECU/HMI_ECU.c:50: first defined here
+./Control_ECU/CONTROL_ECU.o: In function `storePassword':
+../Control_ECU/CONTROL_ECU.c:58: multiple definition of `operateBuzzer'
+./HMI_ECU/HMI_ECU.o:../HMI_ECU/HMI_ECU.c:50: first defined here
+./Control_ECU/CONTROL_ECU.o: In function `storePassword':
+../Control_ECU/CONTROL_ECU.c:58: multiple definition of `Timer1_INT'
+./HMI_ECU/HMI_ECU.o:../HMI_ECU/HMI_ECU.c:50: first defined here
+./Control_ECU/CONTROL_ECU.o: In function `storePassword':
+../Control_ECU/CONTROL_ECU.c:58: multiple definition of `main'
+./HMI_ECU/HMI_ECU.o:../HMI_ECU/HMI_ECU.c:50: first defined here
+./Control_ECU/GPIO.o: In function `GPIO_setupPinDirection':
+../Control_ECU/GPIO.c:22: multiple definition of `GPIO_setupPinDirection'
+./HMI_ECU/GPIO.o:../HMI_ECU/GPIO.c:22: first defined here
+./Control_ECU/GPIO.o: In function `GPIO_setupPinDirection':
+../Control_ECU/GPIO.c:22: multiple definition of `GPIO_writePin'
+./HMI_ECU/GPIO.o:../HMI_ECU/GPIO.c:22: first defined here
+./Control_ECU/GPIO.o: In function `GPIO_setupPinDirection':
+../Control_ECU/GPIO.c:22: multiple definition of `GPIO_readPin'
+./HMI_ECU/GPIO.o:../HMI_ECU/GPIO.c:22: first defined here
+./Control_ECU/GPIO.o: In function `GPIO_setupPinDirection':
+../Control_ECU/GPIO.c:22: multiple definition of `GPIO_setupPortDirection'
+./HMI_ECU/GPIO.o:../HMI_ECU/GPIO.c:22: first defined here
+./Control_ECU/GPIO.o: In function `GPIO_setupPinDirection':
+../Control_ECU/GPIO.c:22: multiple definition of `GPIO_writePort'
+./HMI_ECU/GPIO.o:../HMI_ECU/GPIO.c:22: first defined here
+./Control_ECU/GPIO.o: In function `GPIO_setupPinDirection':
+../Control_ECU/GPIO.c:22: multiple definition of `GPIO_readPort'
+./HMI_ECU/GPIO.o:../HMI_ECU/GPIO.c:22: first defined here
+./Control_ECU/timer1.o: In function `__vector_9':
+../Control_ECU/timer1.c:23: multiple definition of `__vector_9'
+./HMI_ECU/timer1.o:../HMI_ECU/timer1.c:23: first defined here
+./Control_ECU/timer1.o: In function `__vector_9':
+../Control_ECU/timer1.c:23: multiple definition of `__vector_7'
+./HMI_ECU/timer1.o:../HMI_ECU/timer1.c:23: first defined here
+./Control_ECU/timer1.o: In function `__vector_9':
+../Control_ECU/timer1.c:23: multiple definition of `Timer1_init'
+./HMI_ECU/timer1.o:../HMI_ECU/timer1.c:23: first defined here
+./Control_ECU/timer1.o: In function `__vector_9':
+../Control_ECU/timer1.c:23: multiple definition of `Timer1_setCallBack'
+./HMI_ECU/timer1.o:../HMI_ECU/timer1.c:23: first defined here
+./Control_ECU/timer1.o: In function `__vector_9':
+../Control_ECU/timer1.c:23: multiple definition of `Timer1_deInit'
+./HMI_ECU/timer1.o:../HMI_ECU/timer1.c:23: first defined here
+./Control_ECU/uart.o: In function `UART_init':
+../Control_ECU/uart.c:16: multiple definition of `UART_init'
+./HMI_ECU/uart.o:../HMI_ECU/uart.c:16: first defined here
+./Control_ECU/uart.o: In function `UART_init':
+../Control_ECU/uart.c:16: multiple definition of `UART_sendByte'
+./HMI_ECU/uart.o:../HMI_ECU/uart.c:16: first defined here
+./Control_ECU/uart.o: In function `UART_init':
+../Control_ECU/uart.c:16: multiple definition of `UART_receiveByte'
+./HMI_ECU/uart.o:../HMI_ECU/uart.c:16: first defined here
+./Control_ECU/uart.o: In function `UART_init':
+../Control_ECU/uart.c:16: multiple definition of `UART_sendString'
+./HMI_ECU/uart.o:../HMI_ECU/uart.c:16: first defined here
+./Control_ECU/uart.o: In function `UART_init':
+../Control_ECU/uart.c:16: multiple definition of `UART_receiveString'
+./HMI_ECU/uart.o:../HMI_ECU/uart.c:16: first defined here
+make: *** [Door_Locker_security_system.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:40:26 **** Build of configuration Debug for project CONTROL_ECU ****
+make all 
+Building file: ../CONTROL_ECU.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"CONTROL_ECU.d" -MT"CONTROL_ECU.o" -c -o "CONTROL_ECU.o" "../CONTROL_ECU.c"
+In file included from ../CONTROL_ECU.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../CONTROL_ECU.c
+ 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+Finished building: ../GPIO.c
+ 
+Building file: ../PWM.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"PWM.d" -MT"PWM.o" -c -o "PWM.o" "../PWM.c"
+Finished building: ../PWM.c
+ 
+Building file: ../buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"buzzer.d" -MT"buzzer.o" -c -o "buzzer.o" "../buzzer.c"
+Finished building: ../buzzer.c
+ 
+Building file: ../dc-motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"dc-motor.d" -MT"dc-motor.o" -c -o "dc-motor.o" "../dc-motor.c"
+Finished building: ../dc-motor.c
+ 
+Building file: ../external_eeprom.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"external_eeprom.d" -MT"external_eeprom.o" -c -o "external_eeprom.o" "../external_eeprom.c"
+Finished building: ../external_eeprom.c
+ 
+Building file: ../i2c.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"i2c.d" -MT"i2c.o" -c -o "i2c.o" "../i2c.c"
+Finished building: ../i2c.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:57: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: CONTROL_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,CONTROL_ECU.map -mmcu=atmega32 -o "CONTROL_ECU.elf"  ./CONTROL_ECU.o ./GPIO.o ./PWM.o ./buzzer.o ./dc-motor.o ./external_eeprom.o ./i2c.o ./timer1.o ./uart.o   
+Finished building target: CONTROL_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S CONTROL_ECU.elf  >"CONTROL_ECU.lss"
+Finished building: CONTROL_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CONTROL_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8292 bytes (25.3% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:40:30 **** Build of configuration Debug for project HMI_ECU ****
+make all 
+Building file: ../GPIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"GPIO.d" -MT"GPIO.o" -c -o "GPIO.o" "../GPIO.c"
+Finished building: ../GPIO.c
+ 
+Building file: ../HMI_ECU.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HMI_ECU.d" -MT"HMI_ECU.o" -c -o "HMI_ECU.o" "../HMI_ECU.c"
+In file included from ../HMI_ECU.c:17:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HMI_ECU.c
+ 
+Building file: ../keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"keypad.d" -MT"keypad.o" -c -o "keypad.o" "../keypad.c"
+In file included from ../keypad.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../keypad.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer1.d" -MT"timer1.o" -c -o "timer1.o" "../timer1.c"
+../timer1.c: In function 'Timer1_setCallBack':
+../timer1.c:57: warning: function return types not compatible due to 'volatile'
+Finished building: ../timer1.c
+ 
+Building file: ../uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"uart.d" -MT"uart.o" -c -o "uart.o" "../uart.c"
+Finished building: ../uart.c
+ 
+Building target: HMI_ECU.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,HMI_ECU.map -mmcu=atmega32 -o "HMI_ECU.elf"  ./GPIO.o ./HMI_ECU.o ./keypad.o ./lcd.o ./timer1.o ./uart.o   
+Finished building target: HMI_ECU.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S HMI_ECU.elf  >"HMI_ECU.lss"
+Finished building: HMI_ECU.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 HMI_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   15626 bytes (47.7% Full)
+(.text + .data + .bootloader)
+
+Data:        312 bytes (15.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:41:00 **** Incremental Build of configuration Debug for project CONTROL_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CONTROL_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8292 bytes (25.3% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:41:00 **** Incremental Build of configuration Debug for project HMI_ECU ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 HMI_ECU.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   15626 bytes (47.7% Full)
+(.text + .data + .bootloader)
+
+Data:        312 bytes (15.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

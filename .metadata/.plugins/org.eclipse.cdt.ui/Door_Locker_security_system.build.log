@@ -1,0 +1,76 @@
+12:37:06 **** Incremental Build of configuration Debug for project Door_Locker_security_system ****
+make all 
+Building target: Door_Locker_security_system.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Door_Locker_security_system.map -mmcu=atmega32 -o "Door_Locker_security_system.elf"  ./HMI_ECU/GPIO.o ./HMI_ECU/HMI_ECU.o ./HMI_ECU/keypad.o ./HMI_ECU/lcd.o ./HMI_ECU/timer1.o ./HMI_ECU/uart.o  ./Control_ECU/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./Control_ECU/CONTROL_ECU.o ./Control_ECU/GPIO.o ./Control_ECU/PWM.o ./Control_ECU/buzzer.o ./Control_ECU/dc-motor.o ./Control_ECU/external_eeprom.o ./Control_ECU/i2c.o ./Control_ECU/timer1.o ./Control_ECU/uart.o   
+./Control_ECU/CONTROL_ECU.o: In function `storePassword':
+../Control_ECU/CONTROL_ECU.c:58: multiple definition of `g_countSeconds'
+./HMI_ECU/HMI_ECU.o:../HMI_ECU/HMI_ECU.c:50: first defined here
+./Control_ECU/CONTROL_ECU.o: In function `storePassword':
+../Control_ECU/CONTROL_ECU.c:58: multiple definition of `timer1_config_ptr'
+./HMI_ECU/HMI_ECU.o:../HMI_ECU/HMI_ECU.c:50: first defined here
+./Control_ECU/CONTROL_ECU.o: In function `storePassword':
+../Control_ECU/CONTROL_ECU.c:58: multiple definition of `verifyPassword'
+./HMI_ECU/HMI_ECU.o:../HMI_ECU/HMI_ECU.c:50: first defined here
+./Control_ECU/CONTROL_ECU.o: In function `storePassword':
+../Control_ECU/CONTROL_ECU.c:58: multiple definition of `operateBuzzer'
+./HMI_ECU/HMI_ECU.o:../HMI_ECU/HMI_ECU.c:50: first defined here
+./Control_ECU/CONTROL_ECU.o: In function `storePassword':
+../Control_ECU/CONTROL_ECU.c:58: multiple definition of `Timer1_INT'
+./HMI_ECU/HMI_ECU.o:../HMI_ECU/HMI_ECU.c:50: first defined here
+./Control_ECU/CONTROL_ECU.o: In function `storePassword':
+../Control_ECU/CONTROL_ECU.c:58: multiple definition of `main'
+./HMI_ECU/HMI_ECU.o:../HMI_ECU/HMI_ECU.c:50: first defined here
+./Control_ECU/GPIO.o: In function `GPIO_setupPinDirection':
+../Control_ECU/GPIO.c:22: multiple definition of `GPIO_setupPinDirection'
+./HMI_ECU/GPIO.o:../HMI_ECU/GPIO.c:22: first defined here
+./Control_ECU/GPIO.o: In function `GPIO_setupPinDirection':
+../Control_ECU/GPIO.c:22: multiple definition of `GPIO_writePin'
+./HMI_ECU/GPIO.o:../HMI_ECU/GPIO.c:22: first defined here
+./Control_ECU/GPIO.o: In function `GPIO_setupPinDirection':
+../Control_ECU/GPIO.c:22: multiple definition of `GPIO_readPin'
+./HMI_ECU/GPIO.o:../HMI_ECU/GPIO.c:22: first defined here
+./Control_ECU/GPIO.o: In function `GPIO_setupPinDirection':
+../Control_ECU/GPIO.c:22: multiple definition of `GPIO_setupPortDirection'
+./HMI_ECU/GPIO.o:../HMI_ECU/GPIO.c:22: first defined here
+./Control_ECU/GPIO.o: In function `GPIO_setupPinDirection':
+../Control_ECU/GPIO.c:22: multiple definition of `GPIO_writePort'
+./HMI_ECU/GPIO.o:../HMI_ECU/GPIO.c:22: first defined here
+./Control_ECU/GPIO.o: In function `GPIO_setupPinDirection':
+../Control_ECU/GPIO.c:22: multiple definition of `GPIO_readPort'
+./HMI_ECU/GPIO.o:../HMI_ECU/GPIO.c:22: first defined here
+./Control_ECU/timer1.o: In function `__vector_9':
+../Control_ECU/timer1.c:23: multiple definition of `__vector_9'
+./HMI_ECU/timer1.o:../HMI_ECU/timer1.c:23: first defined here
+./Control_ECU/timer1.o: In function `__vector_9':
+../Control_ECU/timer1.c:23: multiple definition of `__vector_7'
+./HMI_ECU/timer1.o:../HMI_ECU/timer1.c:23: first defined here
+./Control_ECU/timer1.o: In function `__vector_9':
+../Control_ECU/timer1.c:23: multiple definition of `Timer1_init'
+./HMI_ECU/timer1.o:../HMI_ECU/timer1.c:23: first defined here
+./Control_ECU/timer1.o: In function `__vector_9':
+../Control_ECU/timer1.c:23: multiple definition of `Timer1_setCallBack'
+./HMI_ECU/timer1.o:../HMI_ECU/timer1.c:23: first defined here
+./Control_ECU/timer1.o: In function `__vector_9':
+../Control_ECU/timer1.c:23: multiple definition of `Timer1_deInit'
+./HMI_ECU/timer1.o:../HMI_ECU/timer1.c:23: first defined here
+./Control_ECU/uart.o: In function `UART_init':
+../Control_ECU/uart.c:16: multiple definition of `UART_init'
+./HMI_ECU/uart.o:../HMI_ECU/uart.c:16: first defined here
+./Control_ECU/uart.o: In function `UART_init':
+../Control_ECU/uart.c:16: multiple definition of `UART_sendByte'
+./HMI_ECU/uart.o:../HMI_ECU/uart.c:16: first defined here
+./Control_ECU/uart.o: In function `UART_init':
+../Control_ECU/uart.c:16: multiple definition of `UART_receiveByte'
+./HMI_ECU/uart.o:../HMI_ECU/uart.c:16: first defined here
+./Control_ECU/uart.o: In function `UART_init':
+../Control_ECU/uart.c:16: multiple definition of `UART_sendString'
+./HMI_ECU/uart.o:../HMI_ECU/uart.c:16: first defined here
+./Control_ECU/uart.o: In function `UART_init':
+../Control_ECU/uart.c:16: multiple definition of `UART_receiveString'
+./HMI_ECU/uart.o:../HMI_ECU/uart.c:16: first defined here
+make: *** [Door_Locker_security_system.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+12:37:07 Build Failed. 45 errors, 0 warnings. (took 525ms)
+
